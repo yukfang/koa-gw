@@ -36,8 +36,8 @@ koaApp.use(async (ctx, next) => {
 });
 
 /** koa App Route Binding */
-router.get('/',                             home)
-router.all('(.*)', home)
+router.get('/',         home)
+router.all('(.*)',      home)
 
 koaApp.use(router.routes());
 
